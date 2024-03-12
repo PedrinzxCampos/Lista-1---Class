@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Filme{
+            titulo;
+            genero;
+            duracao;
+
+            constructor(titulo, genero, duracao){
+            this.titulo = titulo;
+            this.genero = genero;
+            this.duracao = duracao; 
+        }
+        informacoesFilme(){
+            return(this.titulo + this.genero + this.duracao);
+        }
+    }
+            
+        let Filme1 = new Filme("O Por do Sol " , " Ação " , 2.50);
+        console.log(Filme)
+        console.log(`O Filme é: ${Filme1.informacoesFilme()}`)
+    </script>
+</body>
+</html>
